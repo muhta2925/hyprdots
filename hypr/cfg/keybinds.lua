@@ -70,6 +70,7 @@ hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd("noctalia msg brightness-down")
 --  Window: close
 hl.bind(mod .. " + Q", hl.dsp.window.close())
 hl.bind(mod2 .. " + Q", hl.dsp.window.kill())
+hl.bind(mod .. " + mouse:274", hl.dsp.window.close(), { mouse = true })
 
 --  Workspace: switch
 hl.bind(mod .. " + mouse_down", hl.dsp.focus({ workspace = "e-1" }))
@@ -127,7 +128,7 @@ hl.bind(mod .. " + SHIFT + E", hl.dsp.exit())
 hl.bind(mod .. " + SHIFT + P", function()
     hl.timer(function()
         hl.dispatch(hl.dsp.dpms({ action = "disable" }))
-    end, { timeout = 100, type = "oneshot" })
+    end, { timeout = 500, type = "oneshot" })
 end)
 
 --  Laptop lid events
