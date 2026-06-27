@@ -34,7 +34,7 @@ hl.workspace_rule({
 
 hl.workspace_rule({
     workspace        = "special:steam",
-    on_created_empty = "steam",
+    on_created_empty = "dex ~/.local/share/applications/steam.desktop",
 })
 
 hl.workspace_rule({
@@ -150,7 +150,13 @@ hl.window_rule({
     float = true,
 })
 
+-- Additional Apps
 hl.window_rule({
     match = { class = "Waydroid" },
     fullscreen = true,
+})
+
+hl.window_rule({
+    match = { class = "^(twintaillauncher|hayase)$" },
+    maximize = true,
 })

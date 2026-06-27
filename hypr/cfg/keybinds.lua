@@ -52,6 +52,7 @@ hl.bind(mod .. " + V", hl.dsp.exec_cmd("noctalia msg panel-toggle clipboard"))
 hl.bind(mod .. " + R", hl.dsp.exec_cmd("noctalia msg config-reload"))
 hl.bind(mod .. " + SHIFT + A", hl.dsp.exec_cmd("noctalia msg panel-toggle control-center system"))
 hl.bind(mod .. " + N", hl.dsp.exec_cmd("noctalia msg panel-toggle control-center notifications"))
+hl.bind(mod2 .. " + V", hl.dsp.exec_cmd("noctalia msg panel-toggle control-center audio"))
 
 --  Media controls
 hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("noctalia msg volume-up " .. V.volume_step), { locked = true })
