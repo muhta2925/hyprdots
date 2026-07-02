@@ -89,7 +89,7 @@ hl.window_rule({
 
 -- File pickers (Nautilus/GTK) -> float, center, no decoration
 hl.window_rule({
-    match    = { title = "^(Open File|Open Files|Open Folder|Open|Save|Save As|Export|Import|Choose File|Rename)$" },
+    match    = { title = "^(Open File|Location|Open Files|Open Folder|Open|Save|Save As|Export|Import|Choose File|Rename)$" },
     float    = true,
     center   = true,
     decorate = false,
