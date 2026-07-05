@@ -26,7 +26,7 @@ hl.bind(mod .. " + T", hl.dsp.exec_cmd(V.terminal))
 hl.bind(mod .. " + E", hl.dsp.exec_cmd(V.fileManager))
 hl.bind(mod .. " + W", hl.dsp.exec_cmd(V.browser))
 hl.bind(mod .. " + C", hl.dsp.exec_cmd(V.editor))
-hl.bind(mod .. " + A", hl.dsp.exec_cmd("twintaillauncher"))
+hl.bind(mod .. " + H", hl.dsp.exec_cmd("hayase"))
 
 --  Hypr Scipts
 hl.bind("CTRL + " .. mod .. " + A", hl.dsp.exec_cmd("~/.config/hypr/bin/hypr-lens"))
@@ -60,14 +60,14 @@ hl.bind("XF86MonBrightnessUp", hl.dsp.exec_cmd("noctalia msg brightness-up"), { 
 hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd("noctalia msg brightness-down"), { locked = true })
 
 --  Media controls
-hl.bind(mod .. " + CTRL + Space", hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
-hl.bind("XF86AudioPlay", hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
-hl.bind("XF86AudioPause", hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
-hl.bind(mod .. " + CTRL + Equal", hl.dsp.exec_cmd("playerctl next"), { locked = true })
-hl.bind("XF86AudioNext", hl.dsp.exec_cmd("playerctl next"), { locked = true })
-hl.bind(mod .. " + CTRL + Minus", hl.dsp.exec_cmd("playerctl previous"), { locked = true })
-hl.bind("XF86AudioPrev", hl.dsp.exec_cmd("playerctl previous"), { locked = true })
-hl.bind("XF86AudioStop", hl.dsp.exec_cmd("playerctl stop"), { locked = true })
+hl.bind(mod .. " + CTRL + Space", hl.dsp.exec_cmd("noctalia msg media toggle"), { locked = true })
+hl.bind("XF86AudioPlay", hl.dsp.exec_cmd("noctalia msg media toggle"), { locked = true })
+hl.bind("XF86AudioPause", hl.dsp.exec_cmd("noctalia msg media toggle"), { locked = true })
+hl.bind(mod .. " + CTRL + Equal", hl.dsp.exec_cmd("noctalia msg media next"), { locked = true })
+hl.bind("XF86AudioNext", hl.dsp.exec_cmd("noctalia msg media next"), { locked = true })
+hl.bind(mod .. " + CTRL + Minus", hl.dsp.exec_cmd("noctalia msg media previous"), { locked = true })
+hl.bind("XF86AudioPrev", hl.dsp.exec_cmd("noctalia msg media previous"), { locked = true })
+hl.bind("XF86AudioStop", hl.dsp.exec_cmd("noctalia msg media stop"), { locked = true })
 
 -- Volume
 hl.bind("XF86AudioMicMute", hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"), { locked = true })

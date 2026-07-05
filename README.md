@@ -18,7 +18,6 @@ To get this setup running, you will need the following packages installed on you
 - `snappy-switcher` - Advanced window/workspace switching.
 
 ### Utilities
-- `playerctl` - Media playback control.
 - `wpctl` - Audio management (WirePlumber).
 - `grimblast` - Screenshot utility.
 - `tesseract` - OCR engine (used by `hypr-ocr`).
