@@ -64,5 +64,6 @@ V.aria_voice_margin       = 20 -- margin for voice overlay in bottom-right
 
 -- Misc
 V.volume_step             = 2 -- percent per media key press
+V.volume_max              = 100
 
 return V
