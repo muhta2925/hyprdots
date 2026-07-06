@@ -2,7 +2,7 @@ local V                   = {}
 
 -- Apps
 V.terminal                = "kitty"
-V.browser                 = "zen-browser"
+V.browser                 = "google-chrome-stable"
 V.editor                  = "zeditor"
 V.fileManager             = "nautilus"
 V.vpn                     = "surfshark"
